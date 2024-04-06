@@ -1,0 +1,7 @@
+# Ignore the virtual environment
+env/
+
+# Ignore automatically generated files and folders
+.DS_Store
+.idea/
+__pycache__/
