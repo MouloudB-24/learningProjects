@@ -16,7 +16,7 @@ class Rectangle:
         return 2 * self.width + 2 * self.height
 
     def get_diagonal(self):
-        return ((self.width ** 2 + self.height ** 2) ** .5)
+        return (self.width ** 2 + self.height ** 2) ** .5
     
     def get_picture(self):
         picture = ""
@@ -33,7 +33,6 @@ class Rectangle:
     
     def __repr__(self):
         return f"Rectangle(width={self.width}, height={self.height})"
-
 
 
 class Square(Rectangle):
@@ -54,10 +53,15 @@ class Square(Rectangle):
         return f"Square(side={self.width})"
 
 
-
 # Usage example 
 rect = Rectangle(10, 5)
-print(rect.get_area())
+print(rect)
+rect.set_width(30)
+rect.set_height(20)
+print(rect)
+
+
+"""print(rect.get_area())
 rect.set_height(3)
 print(rect.get_perimeter())
 print(rect)
@@ -73,3 +77,4 @@ print(sq.get_picture())
 rect.set_height(8)
 rect.set_width(16)
 print(rect.get_amount_inside(sq))
+"""
