@@ -12,9 +12,5 @@ def clean_text(text):
 def clean_title(title):
     # Delete content between brackets
     title = title.split('(')[0]
-
-    # Filter special characters
-    title = ''.join(char for char in title if char not in string.punctuation)
-
     # `Replace spaces with underscores
-    return title.strip().replace(' ', '_')
+    return ''.join(char for char in title if char not in string.punctuation).strip()
