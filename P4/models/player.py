@@ -1,3 +1,6 @@
+from pprint import pprint
+
+
 class Player:
     def __init__(
         self, first_name=None, last_name=None, birth_date=None, sex="M", chess_id=None
@@ -64,11 +67,11 @@ class Player:
             data (dict): dictionnaire contenu les informations de joueur.
 
         Returns:
-            object: objet joueur.
+            class: class joueur.
         """
         player = cls(
             first_name=data["first_name"],
-            last_name=data["last_name",],
+            last_name=data["last_name"],
             birth_date=data["birth_date"],
             sex=data["sex"],
             chess_id=data["chess_id"],
@@ -83,3 +86,7 @@ class Player:
 if __name__ == "__main__":
     aylan = Player("Aylan", "BELLIL", "2024/03/09", "M", "AB00001")
     print(aylan)
+    to_dict = aylan.to_dict()
+    pprint(to_dict)
+    from_dict = aylan.from_dict(to_dict)
+    print(from_dict)
