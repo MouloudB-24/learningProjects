@@ -161,5 +161,4 @@ if __name__ == "__main__":
     round1.add_match(match1)
     round1.add_match(match2)
     tournament.generate_rounds()
-    #print(tournament.match_history)
     pprint(tournament.to_dict())
