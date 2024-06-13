@@ -38,7 +38,7 @@ class Round:
         }
 
     @classmethod
-    def from_to_dict(cls, data):
+    def from_dict(cls, data):
         round_ = cls(
             name=data["name"], start_time=data["start_time"], end_time=data["end_time"]
         )

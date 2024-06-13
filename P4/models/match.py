@@ -37,7 +37,9 @@ class Match:
         return cls(player1, data["score1"], player2, data["score2"])
 
     def __str__(self):
-        return f"{self.player1.chess_id} {self.score1} - {self.score2} {self.player2.chess_id}"
+        return (
+            f"{self.player1.first_name} {self.player1.last_name}  {self.score1} - {self.score2}  "
+            f"{self.player2.first_name} {self.player2.last_name}")
 
 
 if __name__ == "__main__":
