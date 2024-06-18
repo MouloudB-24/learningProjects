@@ -12,14 +12,14 @@ class Tournament:
         location=None,
         start_date=None,
         end_date=None,
-        rounds_count=4,
+        round_count=4,
         description="",
     ):
         self.name = name
         self.location = location
         self.start_date = start_date
         self.end_date = end_date
-        self.rounds_count = rounds_count
+        self.rounds_count = round_count
         self.description = description
         self.currend_round_number = 0
         self.rounds = []
