@@ -1,4 +1,4 @@
-class tournamentView:
+class TournamentView:
     @staticmethod
     def display_tournament(tournament):
         """Display the details of a single tournament."""
